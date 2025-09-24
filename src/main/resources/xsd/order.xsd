@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/order"
+           xmlns="http://www.example.com/order"
+           xmlns:product="http://www.example.com/product"
+           xmlns:client="https://www.example.com/client"
+           elementFormDefault="qualified">
+
+    <xs:import namespace="https://www.example.com/client" schemaLocation="client.xsd"/>
+    <xs:import namespace="http://www.example.com/product" schemaLocation="product.xsd"/>
+
+<xs:element name="order" type="order"/>
+    <xs:complexType name="order">
+        <xs:sequence>
+            <xs:element name="orderNumber" type="xs:long" minOccurs="1"/>
+            <xs:element name="client" type="client:client" minOccurs="1"/>
+                <xs:sequence>
+                    <xs:element name="product" type="product:product" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

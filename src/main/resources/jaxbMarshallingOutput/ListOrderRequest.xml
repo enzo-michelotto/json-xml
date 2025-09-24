@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:listOrderRequest xmlns:cli="https://www.example.com/client" xmlns:ns2="http://www.example.com/request">
+    <ns2:client>
+        <cli:name>string</cli:name>
+        <cli:dateOfBirth>2023-06-26T15:07:54-03:00</cli:dateOfBirth>
+        <cli:gender>MALE</cli:gender>
+        <cli:documentId>10</cli:documentId>
+        <cli:availableAccountCredit>99.00</cli:availableAccountCredit>
+    </ns2:client>
+</ns2:listOrderRequest>

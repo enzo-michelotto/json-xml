@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.example.com/request"
+           xmlns="http://www.example.com/request"
+           xmlns:client="https://www.example.com/client"
+           elementFormDefault="qualified">
+
+    <xs:import namespace="https://www.example.com/client" schemaLocation="client.xsd"/>
+
+    <xs:element name="listOrderRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="client" type="client:client" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

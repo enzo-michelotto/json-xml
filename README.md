@@ -1,5 +1,4 @@
-# 2-xml
-
+# json-xml
 
 ## Introduction
 
@@ -64,4 +63,4 @@ To make sure the xml validation is functional you can run:
 ```BASH 
 mvn sortpom:sort fmt:format clean test
 ``` 
-# json-xml
+

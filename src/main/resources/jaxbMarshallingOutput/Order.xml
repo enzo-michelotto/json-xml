@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns3:order xmlns:prod="https://www.example.com/client" xmlns:ns2="http://www.example.com/product" xmlns:ns3="http://www.example.com/order">
+    <ns3:orderNumber>10</ns3:orderNumber>
+    <ns3:client>
+        <prod:name>string</prod:name>
+        <prod:dateOfBirth>2023-06-26T15:07:54-03:00</prod:dateOfBirth>
+        <prod:gender>MALE</prod:gender>
+        <prod:documentId>10</prod:documentId>
+        <prod:availableAccountCredit>99.00</prod:availableAccountCredit>
+    </ns3:client>
+    <ns3:product>
+        <ns2:productCode>AAAAA0000</ns2:productCode>
+        <ns2:description>good</ns2:description>
+        <ns2:price>99.00</ns2:price>
+        <ns2:category>SHOES</ns2:category>
+    </ns3:product>
+    <ns3:product>
+        <ns2:productCode>AAAAA0000</ns2:productCode>
+        <ns2:description>good</ns2:description>
+        <ns2:price>99.00</ns2:price>
+        <ns2:category>SHOES</ns2:category>
+    </ns3:product>
+</ns3:order>

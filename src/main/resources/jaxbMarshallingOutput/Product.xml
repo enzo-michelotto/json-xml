@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<prod:product xmlns:cli="https://www.example.com/client" xmlns:prod="http://www.example.com/product">
+    <prod:productCode>AAAAA0000</prod:productCode>
+    <prod:description>good</prod:description>
+    <prod:price>99.00</prod:price>
+    <prod:category>SHOES</prod:category>
+</prod:product>

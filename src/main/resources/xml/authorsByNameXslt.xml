@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mr:author_list xmlns:mr="http://www.example.com/xquery">
+   <mr:author>
+      <mr:name>Oscar Wilde</mr:name>
+      <mr:title>Pygmalion</mr:title>
+   </mr:author>
+</mr:author_list>

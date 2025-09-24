@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.example.com/client"
+           xmlns="https://www.example.com/client"
+elementFormDefault="qualified">
+
+<xs:element name="client" type="client">
+</xs:element>
+    <xs:complexType name="client">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" minOccurs="1"/>
+            <xs:element name="dateOfBirth" minOccurs="0">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:dateTime">
+                            <xs:pattern value="\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d[+\-]\d\d:\d\d" />
+                        </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="gender" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="FEMALE"/>
+                        <xs:enumeration value="MALE"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="documentId" type="xs:long" minOccurs="1"/>
+            <xs:element name="availableAccountCredit" minOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                        <xs:totalDigits value="2"/>
+                        <xs:fractionDigits value="2"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+
+    </xs:complexType>
+</xs:schema>

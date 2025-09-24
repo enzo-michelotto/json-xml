@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.example.com/response"
+           xmlns="http://www.example.com/response"
+           xmlns:ord="http://www.example.com/order"
+           elementFormDefault="qualified">
+
+<xs:import namespace="http://www.example.com/order" schemaLocation="order.xsd"/>
+
+<xs:element name="listOrderResponse">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="order" type="ord:order" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

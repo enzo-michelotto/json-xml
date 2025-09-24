@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:listOrderResponse xmlns:ord="http://www.example.com/order" xmlns:prod="https://www.example.com/client" xmlns:ns3="http://www.example.com/product" xmlns:ns4="http://www.example.com/response">
+    <ns4:order>
+        <ord:orderNumber>10</ord:orderNumber>
+        <ord:client>
+            <prod:name>string</prod:name>
+            <prod:dateOfBirth>2023-06-26T15:07:54-03:00</prod:dateOfBirth>
+            <prod:gender>MALE</prod:gender>
+            <prod:documentId>10</prod:documentId>
+            <prod:availableAccountCredit>99.00</prod:availableAccountCredit>
+        </ord:client>
+        <ord:product>
+            <ns3:productCode>AAAAA0000</ns3:productCode>
+            <ns3:description>good</ns3:description>
+            <ns3:price>99.00</ns3:price>
+            <ns3:category>SHOES</ns3:category>
+        </ord:product>
+        <ord:product>
+            <ns3:productCode>AAAAA0000</ns3:productCode>
+            <ns3:description>good</ns3:description>
+            <ns3:price>99.00</ns3:price>
+            <ns3:category>SHOES</ns3:category>
+        </ord:product>
+    </ns4:order>
+</ns4:listOrderResponse>

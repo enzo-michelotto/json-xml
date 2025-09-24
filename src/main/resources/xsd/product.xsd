@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.example.com/product"
+           xmlns="http://www.example.com/product"
+elementFormDefault="qualified">
+
+<xs:element name="product" type="product"/>
+    <xs:complexType name="product">
+        <xs:sequence>
+        <xs:element name="productCode" minOccurs="1">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[a-zA-Z]{5}[0-9]{4}"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+        <xs:element name="description" type="xs:string" minOccurs="0"/>
+        <xs:element name="price" minOccurs="1">
+            <xs:simpleType>
+                <xs:restriction base="xs:decimal">
+                    <xs:totalDigits value="2"/>
+                    <xs:fractionDigits value="2"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="category" minOccurs="1">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="ELECTRONICS"/>
+                    <xs:enumeration value="SPORTSWEAR"/>
+                    <xs:enumeration value="SHOES"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:element>
+    </xs:sequence>
+    </xs:complexType>
+</xs:schema>

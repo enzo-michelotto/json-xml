@@ -1,0 +1,14 @@
+<configuration>
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <file>/home/examplebr/IdeaProjects/2-xml/target/app.log</file>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd'T'HH:mm:ss.SSS'Z', UTC}] [%c{25}] [%-5p] - %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="file"/>
+    </root>
+
+    <logger name="com.networknt" level="ERROR"/>
+</configuration>
